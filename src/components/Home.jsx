@@ -71,24 +71,24 @@ const Home = () => {
     </a> ):""
     } */}
    
-      <div className="flex flex-row gap-7 justify-center my-5"> 
+      <div className="flex lg:flex-row  flex-col lg:gap-7 items-center  justify-center my-5"> 
       {/* in this div input hy or button */}
         <input
-          className="p-2 rounded-2xl mt-2 w-4/12 p-l-4 focus:outline-slate-300 focus:shadow-lg duration-150"
+          className="p-2 rounded-2xl mt-2 w-11/12  lg:w-4/12 p-l-4 focus:outline-slate-300 focus:shadow-lg duration-150"
           type="text"
           placeholder="enter title here"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
 
-        <button onClick={createPaste} className="p-2 rounded-2xl mt-2  focus:outline-slate-300 hover:border-slate-500">
+        <button onClick={createPaste} className="p-2 rounded-2xl w-fit mt-2  focus:outline-slate-300 hover:border-slate-500">
           {pasteId ? "update my note" : "create my note"}
         </button>
       </div>
 
 
 
-      <div className=" text-center w-1/2  mx-auto">
+      <div className=" text-center lg:w-1/2  w-11/12 mx-auto">
         <textarea
           className="rounded-2xl mt-4,min-w-[500px] p-4 w-full  focus:outline-slate-300  "
           value={value}

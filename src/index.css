@@ -76,10 +76,10 @@ button a{
   font-size:x-large;
   /* @apply hover:scale-110 hover:text-gray-500 */
 }
-.box1{
+/* .box1{
   width: 50%;
 
-}
+} */
 .box1 div{
   width: 100%;
 

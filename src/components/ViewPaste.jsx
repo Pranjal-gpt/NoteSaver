@@ -30,7 +30,7 @@ const ViewPaste = () => {
           {pasteId ? "update my paste" : "create my paste"}
         </button> */}
       </div>
-      <div className="text-center w-1/2  mx-auto my-5">
+      <div className="text-center lg:w-1/2 w-11/12  mx-auto my-5">
         <textarea
           className="rounded-2xl mt-4,min-w-[500px] p-4 w-full  focus:outline-slate-300  bg-white"
           value={paste.content}

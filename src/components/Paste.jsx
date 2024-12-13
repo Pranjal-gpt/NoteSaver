@@ -24,32 +24,32 @@ const paste = () => {
   return (
     <div className="bg-rose-100 my-5 h-[85vh] overflow-hidden">
       <input
-        className="p-2 mx-5 rounded-xl min-w-[600px] mt-5 "
+        className="p-2 mx-5 rounded-xl w-11/12 lg:min-w-[600px] mt-5 "
         type="search"
         placeholder="Serach here"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <div className="flex flex-col gap-5 mt-5 w-[70vw] overflow-y-auto h-[70vh] ">
+      <div className="flex flex-col gap-5 mt-5 w-screen lg:w-[70vw] overflow-y-auto h-[70vh]  ">
         {filteredData.length > 0 &&
           filteredData.map((paste) => {
             return (
               <div
-                className="border-4 rounded-xl p-5 max-w-[70vw] flex align-top justify-between bg-white mx-5"
+                className="border-4 rounded-xl p-5 lg:max-w-[70vw] flex lg:flex-row flex-col align-top justify-between bg-white mx-5 lg:gap-0 gap-4"
                 key={paste?._id}
               >
-              <div className="box1 w-1/2">
-                  <div className="font-bold text-xl py-2 break-words">
+              <div className="box1 w-full lg:w-1/2">
+                  <div className="font-bold lg:text-xl text-lg py-2 break-words">
                     {paste.title.substring(0, 50)}
                   </div>
 
-                  <div className="text-lg break-words">
+                  <div className=" text-md lg:text-lg break-words">
                     {paste.content.substring(0, 50)}
                   </div>
               </div>
 
                 
-                <div className=" box2 relative -top-5" >
+                <div className=" box2 lg:relative -top-5" >
                 
                   <div className="flex flex-row gap-4 place-content-evenly ">
                     <button title="Edit">
